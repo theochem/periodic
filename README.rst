@@ -1,9 +1,11 @@
-IOData
-======
-[![Build Status](https://travis-ci.org/theochem/periodic.svg?branch=master)](https://travis-ci.org/theochem/periodic)
-<a href='https://docs.python.org/2.7/'><img src='https://img.shields.io/badge/python-2.7-blue.svg'></a>
-<a href='https://docs.python.org/3.5/'><img src='https://img.shields.io/badge/python-3.5-blue.svg'></a>
-[![codecov](https://codecov.io/gh/theochem/periodic/branch/master/graph/badge.svg)](https://codecov.io/gh/theochem/periodic)
+Periodic
+========
+|Travis|
+|Conda|
+|Pypi|
+|Codecov|
+|Version|
+|CondaVersion|
 
 
 About
@@ -13,13 +15,13 @@ About
 License
 -------
 
-IOData is distributed under GPL License version 3 (GPLv3).
+Periodic is distributed under GPL License version 3 (GPLv3).
 
 
 Dependencies
 ------------
 
-The following dependencies will be necessary for IOData to build properly,
+The following dependencies will be necessary for Periodic to build properly,
 
 * Python >= 2.7, >= 3.5: http://www.python.org/
 * NumPy >= 1.9.1: http://www.numpy.org/
@@ -29,7 +31,7 @@ The following dependencies will be necessary for IOData to build properly,
 Installation
 ------------
 
-To install IOData:
+To install Periodic:
 
 ```bash
 python ./setup install --user
@@ -44,3 +46,15 @@ To run tests:
 ```bash
 nosetests -v periodic 
 ```
+
+.. |Travis| image:: https://travis-ci.org/theochem/periodic.svg?branch=master
+       :target: https://travis-ci.org/theochem/periodic
+.. |Version| image:: https://img.shields.io/pypi/pyversions/periodic.svg
+   .. |Pypi| image:: https://img.shields.io/pypi/v/periodic.svg
+          :target: https://pypi.python.org/pypi/periodic/0.1.3
+.. |Codecov| image:: https://img.shields.io/codecov/c/github/theochem/periodic/master.svg
+       :target: https://codecov.io/gh/theochem/periodic
+.. |Conda| image:: https://img.shields.io/conda/v/theochem/periodic.svg
+       :target: https://anaconda.org/theochem/periodic
+.. |CondaVersion| image:: https://img.shields.io/conda/pn/theochem/periodic.svg
+       :target: https://anaconda.org/theochem/periodic
