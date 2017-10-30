@@ -1,0 +1,27 @@
+package:
+  version: "{{ PROJECT_VERSION }}"
+  name: 'periodic'
+
+source:
+  path: ../../
+
+build:
+  number: 0
+  script: python setup.py install
+
+requirements:
+  build:
+    - python
+    - numpy
+    - setuptools
+    - nose
+    - gcc     # [ not win ]
+  run:
+    - python
+    - numpy
+    - nose
+    - libgcc  # [ not win ]
+
+about:
+  home: https://github.com/theochem/periodic
+  license: GNU Version 3
