@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import Cython.Build
 import numpy as np
 from setuptools import setup, Extension
 
@@ -11,7 +10,7 @@ def get_version():
     This function assumes that the last line in the file contains a variable defining the
     version string with single quotes.
     """
-    with open('iodata/version.py', 'r') as fhandle:
+    with open('periodic/version.py', 'r') as fhandle:
         return fhandle.read().split('=')[-1].replace('\'', '').strip()
 
 
@@ -29,8 +28,7 @@ setup(
     author='Toon Verstraelen',
     author_email='Toon.Verstraelen@UGent.be',
     url='https://github.com/theochem/periodic',
-    package_dir={'iodata': 'iodata'},
-    packages=['iodata', 'iodata.test'],
+    packages=['periodic', 'periodic.test'],
     include_package_data=True,
     classifiers=[
         'Environment :: Console',
