@@ -20,7 +20,7 @@
 # --
 
 
-from periodic import periodic
+from .. periodic import periodic
 from .. utils import angstrom, amu
 
 
