@@ -35,6 +35,7 @@
        >>> periodic['5'].symbol
        'B'
 """
+from os import path
 
 from .utils import angstrom, amu
 
@@ -253,7 +254,7 @@ def load_periodic():
         'amu': (lambda s: float(s) * amu),
     }
 
-    with open(context.get_fn('elements.csv'), 'r') as f:
+    with open(path.join(path.split(__file__)[0], 'elements.csv'), 'r') as f:
         r = csv.reader(f)
         # go to the actual data
         for row in r:
