@@ -254,7 +254,7 @@ def load_periodic():
         'amu': (lambda s: float(s) * amu),
     }
 
-    with open(path.join(path.split(__file__)[:-1], 'elements.csv'), 'r') as f:
+    with open(path.join(path.split(__file__)[0], 'elements.csv'), 'r') as f:
         r = csv.reader(f)
         # go to the actual data
         for row in r:
